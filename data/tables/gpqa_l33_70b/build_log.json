@@ -1,0 +1,18 @@
+{
+  "problems": 64,
+  "question_mismatch": 0,
+  "solution_text_mismatch": 0,
+  "missing_verification_files": 0,
+  "candidates": 16384,
+  "candidates_with_verifications": 4096,
+  "candidate_answer_unparsed": 487,
+  "verifications": 131072,
+  "verdict_unparsed": 8,
+  "repeats_per_candidate": [
+    32
+  ],
+  "split_counts": {
+    "dev": 32,
+    "test": 32
+  }
+}
