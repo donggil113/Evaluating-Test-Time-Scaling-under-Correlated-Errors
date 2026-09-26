@@ -1,0 +1,86 @@
+{
+  "experiment_id": "N5-GPQA-L33-70B-selfverify-v1",
+  "protocol": "docs/protocol.md (frozen at commit 7bbebce)",
+  "machine": {
+    "cpu_only": true,
+    "n_cpu": 4,
+    "python": "3.11.15",
+    "gpu": null,
+    "llm_api_calls": 0
+  },
+  "downloads": {
+    "total_bytes": 72320388,
+    "files": {
+      "sc-genrm-scaling/GPQA_diamond_Solutions_Llama-3.3-70B-Instruct/compressed_Llama-3.3-70B-Instruct.tar.gz": "af885f3972681497b5ee4f9964fce5d0ca731ca8aaa912e6166d155e2b9b191e",
+      "sc-genrm-scaling/GPQA_verifications_GenRM-Base_Llama-3.3-70B-Instruct/compressed_GPQA_verifications_GenRM-Base_Llama-3.3-70B-Instruct.tar.gz": "fea30c7e59fcbd4cbd38efb97e85f2081c66e1d33b17a780b25a4b84e381c2f9",
+      "unsloth/Llama-3.3-70B-Instruct/tokenizer.json (token counting only)": "6b9e4e7fb171f92fd137b777cc2714bf87d11576700a1dcd7a399e7bbe39537b"
+    }
+  },
+  "runs": [
+    {
+      "id": "R0-build",
+      "cmd": "scripts/fetch_data.sh raw && python scripts/build_table.py --raw raw/gpqa --tokenizer raw/llama3_tokenizer.json --out data/tables/gpqa_l33_70b",
+      "status": "DONE",
+      "wall_s_approx": 194,
+      "note": "run 3 times; parser revised twice on output text format only (answer 'is: X', verdict '(No)'), before any outcome analysis; outputs overwritten"
+    },
+    {
+      "id": "R1-dev",
+      "cmd": "python scripts/run_experiment.py --phase dev",
+      "status": "DONE",
+      "record": "results/gpqa_l33_70b/run_dev.json",
+      "note": "run twice; second run after deviation D1 (tau grid); working tree = 7bbebce + D1, committed as 66abf24"
+    },
+    {
+      "id": "R2-test",
+      "cmd": "python scripts/run_experiment.py --phase test",
+      "status": "DONE (once)",
+      "record": "results/gpqa_l33_70b/run_test.json",
+      "commit": "66abf24"
+    },
+    {
+      "id": "R3-measure",
+      "cmd": "python scripts/analyze_correlation.py",
+      "status": "DONE",
+      "wall_s_approx": 140
+    },
+    {
+      "id": "R4-describe",
+      "cmd": "python scripts/describe_grid.py",
+      "status": "DONE",
+      "wall_s_approx": 115,
+      "note": "descriptive only, after selection was frozen"
+    },
+    {
+      "id": "T-leak",
+      "cmd": "python -m pytest tests -q",
+      "status": "PASS"
+    }
+  ],
+  "not_run": {
+    "diversified_verifier_same_pool": "NOT_RUN: released GPQA pool has one verifier. MATH-128 Qwen-2.5-7B solutions have two fine-tuned verifiers with repeats (HF nishadsinghi/math128_qwen2p57B_VER-Llama-3.1-8B-Inst_... 185 MB, sc-genrm-scaling/MATH128_verifications_GenRM-FT_Qwen-2.5-7B-Instruct 1.04 GB) - needs approval for ~1.2 GB new download.",
+    "history_dependent_query_policies": "NOT_RUN: require a live online runner; no inference access (no GPU, no API key).",
+    "code_domain": "NOT_RUN: no released code traces with repeated verifier calls and independent hidden tests were identified within the download budget."
+  },
+  "inputs": {
+    "data/tables/gpqa_l33_70b/build_log.json": "ad689c1f93bceb29625659fd2afaf465b4e7a21b2523899c78837ffd6160273e",
+    "data/tables/gpqa_l33_70b/candidates.csv.gz": "a1890bea83855c5e40c0339972d7c322969d79b5f314a8018893380a0913786b",
+    "data/tables/gpqa_l33_70b/gold.csv": "d8b5fbd4237e0a013bc5fb9906ba325a86028a1286276c41f8e59aeb2451497a",
+    "data/tables/gpqa_l33_70b/problems.csv": "4568f75d55497ad3359b4920469cb89be143ef62e20e499f62bc31a9c57987ce",
+    "data/tables/gpqa_l33_70b/verifications.csv.gz": "1f953426c013f5e22bd149a779a4e8b71bd53218dd3967bff239e8cd893fabbe"
+  },
+  "outputs": {
+    "results/gpqa_l33_70b/dev_policy_summary.csv": "45e02663cac8033b4c2b0f430619142cd1794bba5d5916bdfe4df3ad1fe25b9f",
+    "results/gpqa_l33_70b/dev_selection.json": "f5455bb473895f38e7e179762bfc9903f69edbcdb65334ff44cece4c61720f67",
+    "results/gpqa_l33_70b/grid_dev.csv": "ece61df2291b45c63de49719d82d58309f359c2b2a3268db682eb688ce60732d",
+    "results/gpqa_l33_70b/grid_report.json": "7f32b31e1cf897f52d217e04c944b9c58a4cc2358ebd3f2a88b235dd970fbbf7",
+    "results/gpqa_l33_70b/grid_test.csv": "b801645047e1080abce142b8adf9f8731486cfbc5471cc2495cafe6fea98fd08",
+    "results/gpqa_l33_70b/marginal_value_dev.csv": "0a0fcb60f8a4b0ac6208ececc5ded2e96b21ac490a02de22b15d887dde20beff",
+    "results/gpqa_l33_70b/marginal_value_test.csv": "ffe244f4648c536959150119ee1557f23bb6fd88261631f26d4f0d6565c3df90",
+    "results/gpqa_l33_70b/measurement.json": "a80c13be167010fc267355a66402e64f732427275374743cfb410368330f03c7",
+    "results/gpqa_l33_70b/run_dev.json": "ca432a02e682f4c4aaea1f7b2306388392a3f47fadbee7fe1f6790d88f28cf55",
+    "results/gpqa_l33_70b/run_test.json": "b4d04913a696d3670c2f3f5c5489c2d8d2eaed2884816526248f4d1fbd97c479",
+    "results/gpqa_l33_70b/test_endpoints.json": "58657a06c1e93052f9931acce24354f4e45cafbb4414e9a728f8962917f76601",
+    "results/gpqa_l33_70b/test_selected_runs.csv.gz": "921c5a9b91e1adc3246b01200b7329238d1c09ca03c645519e0845511ab7de3b"
+  }
+}

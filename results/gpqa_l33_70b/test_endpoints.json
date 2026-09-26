@@ -1,0 +1,563 @@
+{
+  "per_budget": {
+    "GEN@2": {
+      "policy": "FIX:MV:N1:V0",
+      "dev_err": 0.571875,
+      "dev_cost": 1113.215625,
+      "test_err": 0.46718750000000003,
+      "test_cost": 1070.4343749999998,
+      "test_cpu_s_per_problem": 3.7230265624917104e-06
+    },
+    "GEN@4": {
+      "policy": "AC:G256:c0.8",
+      "dev_err": 0.53125,
+      "dev_cost": 3831.1453125,
+      "test_err": 0.4953125,
+      "test_cost": 4864.50625,
+      "test_cpu_s_per_problem": 2.5249312500005146e-05
+    },
+    "GEN@8": {
+      "policy": "AC:G256:c0.85",
+      "dev_err": 0.528125,
+      "dev_cost": 5358.734375,
+      "test_err": 0.5046875000000001,
+      "test_cost": 6152.121875,
+      "test_cpu_s_per_problem": 3.07699234375066e-05
+    },
+    "GEN@16": {
+      "policy": "AC:G256:c0.85",
+      "dev_err": 0.528125,
+      "dev_cost": 5358.734375,
+      "test_err": 0.5046875000000001,
+      "test_cost": 6152.121875,
+      "test_cpu_s_per_problem": 3.07699234375066e-05
+    },
+    "GEN@32": {
+      "policy": "FIX:MV:N16:V0",
+      "dev_err": 0.521875,
+      "dev_cost": 17838.146875,
+      "test_err": 0.4859375,
+      "test_cost": 17095.9328125,
+      "test_cpu_s_per_problem": 5.7047468749939205e-06
+    },
+    "GEN@64": {
+      "policy": "FIX:MV:N16:V0",
+      "dev_err": 0.521875,
+      "dev_cost": 17838.146875,
+      "test_err": 0.4859375,
+      "test_cost": 17095.9328125,
+      "test_cpu_s_per_problem": 5.7047468749939205e-06
+    },
+    "GEN@128": {
+      "policy": "FIX:MV:N64:V0",
+      "dev_err": 0.5,
+      "dev_cost": 71430.03125,
+      "test_err": 0.5,
+      "test_cost": 68288.5,
+      "test_cpu_s_per_problem": 9.123081250006493e-06
+    },
+    "GEN@256": {
+      "policy": "FIX:MV:N64:V0",
+      "dev_err": 0.5,
+      "dev_cost": 71430.03125,
+      "test_err": 0.5,
+      "test_cost": 68288.5,
+      "test_cpu_s_per_problem": 9.123081250006493e-06
+    },
+    "VER@4": {
+      "policy": "FIX:BAYES-CORR:N1:V1",
+      "dev_err": 0.571875,
+      "dev_cost": 2730.3984375,
+      "test_err": 0.46718750000000003,
+      "test_cost": 2586.4265625,
+      "test_cpu_s_per_problem": 1.744071562500317e-05
+    },
+    "VER@8": {
+      "policy": "FIX:BAYES-CORR:N2:V2",
+      "dev_err": 0.559375,
+      "dev_cost": 8650.51875,
+      "test_err": 0.4765625,
+      "test_cost": 8169.356249999999,
+      "test_cpu_s_per_problem": 2.1464901562504373e-05
+    },
+    "VER@16": {
+      "policy": "STOP:CORR:GV64x2:tau0.26",
+      "dev_err": 0.525,
+      "dev_cost": 13794.946875,
+      "test_err": 0.46718750000000003,
+      "test_cost": 11814.3296875,
+      "test_cpu_s_per_problem": 0.00010197407656252002
+    },
+    "VER@32": {
+      "policy": "FIX:BAYES-CORR:N8:V2",
+      "dev_err": 0.5078125,
+      "dev_cost": 34658.7953125,
+      "test_err": 0.4625,
+      "test_cost": 32765.50625,
+      "test_cpu_s_per_problem": 4.0221843749996615e-05
+    },
+    "VER@64": {
+      "policy": "FIX:BAYES-CORR:N8:V4",
+      "dev_err": 0.503125,
+      "dev_cost": 60348.8296875,
+      "test_err": 0.45937500000000003,
+      "test_cost": 56967.8453125,
+      "test_cpu_s_per_problem": 4.061552343750732e-05
+    },
+    "VER@128": {
+      "policy": "FIX:BAYES-CORR:N8:V4",
+      "dev_err": 0.503125,
+      "dev_cost": 60348.8296875,
+      "test_err": 0.45937500000000003,
+      "test_cost": 56967.8453125,
+      "test_cpu_s_per_problem": 4.061552343750732e-05
+    },
+    "VER@256": {
+      "policy": "FIX:BAYES-CORR:N8:V4",
+      "dev_err": 0.503125,
+      "dev_cost": 60348.8296875,
+      "test_err": 0.45937500000000003,
+      "test_cost": 56967.8453125,
+      "test_cpu_s_per_problem": 4.061552343750732e-05
+    },
+    "FIXED@2": {
+      "policy": "FIX:MV:N1:V0",
+      "dev_err": 0.571875,
+      "dev_cost": 1113.215625,
+      "test_err": 0.46718750000000003,
+      "test_cost": 1070.4343749999998,
+      "test_cpu_s_per_problem": 3.7230265624917104e-06
+    },
+    "FIXED@4": {
+      "policy": "FIX:MV:N1:V0",
+      "dev_err": 0.571875,
+      "dev_cost": 1113.215625,
+      "test_err": 0.46718750000000003,
+      "test_cost": 1070.4343749999998,
+      "test_cpu_s_per_problem": 3.7230265624917104e-06
+    },
+    "FIXED@8": {
+      "policy": "FIX:MV:N4:V0",
+      "dev_err": 0.5453125,
+      "dev_cost": 4469.4078125,
+      "test_err": 0.475,
+      "test_cost": 4275.700000000001,
+      "test_cpu_s_per_problem": 4.482565625011509e-06
+    },
+    "FIXED@16": {
+      "policy": "FIX:BAYES-CORR:N4:V2",
+      "dev_err": 0.5265625,
+      "dev_cost": 17365.0546875,
+      "test_err": 0.471875,
+      "test_cost": 16372.998437499999,
+      "test_cpu_s_per_problem": 2.7792007812500044e-05
+    },
+    "FIXED@32": {
+      "policy": "FIX:BAYES-CORR:N8:V2",
+      "dev_err": 0.5078125,
+      "dev_cost": 34658.7953125,
+      "test_err": 0.4625,
+      "test_cost": 32765.50625,
+      "test_cpu_s_per_problem": 4.0221843749996615e-05
+    },
+    "FIXED@64": {
+      "policy": "FIX:BAYES-CORR:N8:V4",
+      "dev_err": 0.503125,
+      "dev_cost": 60348.8296875,
+      "test_err": 0.45937500000000003,
+      "test_cost": 56967.8453125,
+      "test_cpu_s_per_problem": 4.061552343750732e-05
+    },
+    "FIXED@128": {
+      "policy": "FIX:MV:N64:V0",
+      "dev_err": 0.5,
+      "dev_cost": 71430.03125,
+      "test_err": 0.5,
+      "test_cost": 68288.5,
+      "test_cpu_s_per_problem": 9.123081250006493e-06
+    },
+    "FIXED@256": {
+      "policy": "FIX:MV:N64:V0",
+      "dev_err": 0.5,
+      "dev_cost": 71430.03125,
+      "test_err": 0.5,
+      "test_cost": 68288.5,
+      "test_cpu_s_per_problem": 9.123081250006493e-06
+    },
+    "STOP@2": {
+      "policy": "AC:G256:c0.26",
+      "dev_err": 0.571875,
+      "dev_cost": 1115.4453125,
+      "test_err": 0.465625,
+      "test_cost": 1073.2484375,
+      "test_cpu_s_per_problem": 9.107051562494764e-06
+    },
+    "STOP@4": {
+      "policy": "AC:G256:c0.8",
+      "dev_err": 0.53125,
+      "dev_cost": 3831.1453125,
+      "test_err": 0.4953125,
+      "test_cost": 4864.50625,
+      "test_cpu_s_per_problem": 2.5249312500005146e-05
+    },
+    "STOP@8": {
+      "policy": "AC:G256:c0.85",
+      "dev_err": 0.528125,
+      "dev_cost": 5358.734375,
+      "test_err": 0.5046875000000001,
+      "test_cost": 6152.121875,
+      "test_cpu_s_per_problem": 3.07699234375066e-05
+    },
+    "STOP@16": {
+      "policy": "STOP:CORR:GV64x2:tau0.26",
+      "dev_err": 0.525,
+      "dev_cost": 13794.946875,
+      "test_err": 0.46718750000000003,
+      "test_cost": 11814.3296875,
+      "test_cpu_s_per_problem": 0.00010197407656252002
+    },
+    "STOP@32": {
+      "policy": "STOP:CORR:GV64x4:tau0.26",
+      "dev_err": 0.5171875,
+      "dev_cost": 18219.6875,
+      "test_err": 0.46718750000000003,
+      "test_cost": 15525.584374999999,
+      "test_cpu_s_per_problem": 0.0001287397671875294
+    },
+    "STOP@64": {
+      "policy": "STOP:CORR:GV64x4:tau0.26",
+      "dev_err": 0.5171875,
+      "dev_cost": 18219.6875,
+      "test_err": 0.46718750000000003,
+      "test_cost": 15525.584374999999,
+      "test_cpu_s_per_problem": 0.0001287397671875294
+    },
+    "STOP@128": {
+      "policy": "STOP:CORR:GV64x4:tau0.28",
+      "dev_err": 0.509375,
+      "dev_cost": 78727.0640625,
+      "test_err": 0.44218749999999996,
+      "test_cost": 65893.3515625,
+      "test_cpu_s_per_problem": 0.000495952656249956
+    },
+    "STOP@256": {
+      "policy": "STOP:CORR:GV64x4:tau0.28",
+      "dev_err": 0.509375,
+      "dev_cost": 78727.0640625,
+      "test_err": 0.44218749999999996,
+      "test_cost": 65893.3515625,
+      "test_cpu_s_per_problem": 0.000495952656249956
+    },
+    "STOP-IND@8": {
+      "policy": "STOP:IND:G256:tau0.26",
+      "dev_err": 0.5296875,
+      "dev_cost": 8633.7171875,
+      "test_err": 0.496875,
+      "test_cost": 9645.7234375,
+      "test_cpu_s_per_problem": 9.041887812499954e-05
+    },
+    "STOP-IND@16": {
+      "policy": "STOP:IND:G256:tau0.26",
+      "dev_err": 0.5296875,
+      "dev_cost": 8633.7171875,
+      "test_err": 0.496875,
+      "test_cost": 9645.7234375,
+      "test_cpu_s_per_problem": 9.041887812499954e-05
+    },
+    "STOP-IND@32": {
+      "policy": "STOP:IND:G256:tau0.26",
+      "dev_err": 0.5296875,
+      "dev_cost": 8633.7171875,
+      "test_err": 0.496875,
+      "test_cost": 9645.7234375,
+      "test_cpu_s_per_problem": 9.041887812499954e-05
+    },
+    "STOP-IND@64": {
+      "policy": "STOP:IND:G256:tau0.26",
+      "dev_err": 0.5296875,
+      "dev_cost": 8633.7171875,
+      "test_err": 0.496875,
+      "test_cost": 9645.7234375,
+      "test_cpu_s_per_problem": 9.041887812499954e-05
+    },
+    "STOP-IND@128": {
+      "policy": "STOP:IND:G256:tau0.26",
+      "dev_err": 0.5296875,
+      "dev_cost": 8633.7171875,
+      "test_err": 0.496875,
+      "test_cost": 9645.7234375,
+      "test_cpu_s_per_problem": 9.041887812499954e-05
+    },
+    "STOP-IND@256": {
+      "policy": "STOP:IND:G256:tau0.26",
+      "dev_err": 0.5296875,
+      "dev_cost": 8633.7171875,
+      "test_err": 0.496875,
+      "test_cost": 9645.7234375,
+      "test_cpu_s_per_problem": 9.041887812499954e-05
+    },
+    "STOP-CORR@16": {
+      "policy": "STOP:CORR:GV64x2:tau0.26",
+      "dev_err": 0.525,
+      "dev_cost": 13794.946875,
+      "test_err": 0.46718750000000003,
+      "test_cost": 11814.3296875,
+      "test_cpu_s_per_problem": 0.00010197407656252002
+    },
+    "STOP-CORR@32": {
+      "policy": "STOP:CORR:GV64x4:tau0.26",
+      "dev_err": 0.5171875,
+      "dev_cost": 18219.6875,
+      "test_err": 0.46718750000000003,
+      "test_cost": 15525.584374999999,
+      "test_cpu_s_per_problem": 0.0001287397671875294
+    },
+    "STOP-CORR@64": {
+      "policy": "STOP:CORR:GV64x4:tau0.26",
+      "dev_err": 0.5171875,
+      "dev_cost": 18219.6875,
+      "test_err": 0.46718750000000003,
+      "test_cost": 15525.584374999999,
+      "test_cpu_s_per_problem": 0.0001287397671875294
+    },
+    "STOP-CORR@128": {
+      "policy": "STOP:CORR:GV64x4:tau0.28",
+      "dev_err": 0.509375,
+      "dev_cost": 78727.0640625,
+      "test_err": 0.44218749999999996,
+      "test_cost": 65893.3515625,
+      "test_cpu_s_per_problem": 0.000495952656249956
+    },
+    "STOP-CORR@256": {
+      "policy": "STOP:CORR:GV64x4:tau0.28",
+      "dev_err": 0.509375,
+      "dev_cost": 78727.0640625,
+      "test_err": 0.44218749999999996,
+      "test_cost": 65893.3515625,
+      "test_cpu_s_per_problem": 0.000495952656249956
+    }
+  },
+  "endpoints": {
+    "E1_VER_minus_GEN": {
+      "4": {
+        "diff": -0.028124999999999994,
+        "ci_lo": -0.06874999999999999,
+        "ci_hi": 0.009375000000000015,
+        "p_boot": 0.1638,
+        "cost_diff": -2278.0796875,
+        "policy_a": "FIX:BAYES-CORR:N1:V1",
+        "policy_b": "AC:G256:c0.8",
+        "p_holm": 1.0
+      },
+      "8": {
+        "diff": -0.028125,
+        "ci_lo": -0.08281249999999998,
+        "ci_hi": 0.023437499999999993,
+        "p_boot": 0.2938,
+        "cost_diff": 2017.234375,
+        "policy_a": "FIX:BAYES-CORR:N2:V2",
+        "policy_b": "AC:G256:c0.85",
+        "p_holm": 1.0
+      },
+      "16": {
+        "diff": -0.0375,
+        "ci_lo": -0.10156250000000001,
+        "ci_hi": 0.023437500000000003,
+        "p_boot": 0.2316,
+        "cost_diff": 5662.2078125,
+        "policy_a": "STOP:CORR:GV64x2:tau0.26",
+        "policy_b": "AC:G256:c0.85",
+        "p_holm": 1.0
+      },
+      "32": {
+        "diff": -0.023437500000000007,
+        "ci_lo": -0.109375,
+        "ci_hi": 0.05312499999999999,
+        "p_boot": 0.5872,
+        "cost_diff": 15669.5734375,
+        "policy_a": "FIX:BAYES-CORR:N8:V2",
+        "policy_b": "FIX:MV:N16:V0",
+        "p_holm": 1.0
+      },
+      "64": {
+        "diff": -0.026562500000000006,
+        "ci_lo": -0.1109375,
+        "ci_hi": 0.05312499999999999,
+        "p_boot": 0.5242,
+        "cost_diff": 39871.912500000006,
+        "policy_a": "FIX:BAYES-CORR:N8:V4",
+        "policy_b": "FIX:MV:N16:V0",
+        "p_holm": 1.0
+      },
+      "128": {
+        "diff": -0.04062500000000001,
+        "ci_lo": -0.15312499999999998,
+        "ci_hi": 0.07499999999999998,
+        "p_boot": 0.4706,
+        "cost_diff": -11320.6546875,
+        "policy_a": "FIX:BAYES-CORR:N8:V4",
+        "policy_b": "FIX:MV:N64:V0",
+        "p_holm": 1.0
+      },
+      "256": {
+        "diff": -0.04062500000000001,
+        "ci_lo": -0.15312499999999998,
+        "ci_hi": 0.07499999999999998,
+        "p_boot": 0.4706,
+        "cost_diff": -11320.6546875,
+        "policy_a": "FIX:BAYES-CORR:N8:V4",
+        "policy_b": "FIX:MV:N64:V0",
+        "p_holm": 1.0
+      }
+    },
+    "E2_STOP_minus_FIXED": {
+      "2": {
+        "diff": -0.001562499999999998,
+        "ci_lo": -0.004687499999999994,
+        "ci_hi": 0.0,
+        "p_boot": 0.725,
+        "cost_diff": 2.8140624999999986,
+        "policy_a": "AC:G256:c0.26",
+        "policy_b": "FIX:MV:N1:V0",
+        "p_holm": 1.0
+      },
+      "4": {
+        "diff": 0.028124999999999994,
+        "ci_lo": -0.009375000000000015,
+        "ci_hi": 0.06874999999999999,
+        "p_boot": 0.1638,
+        "cost_diff": 3794.0718750000005,
+        "policy_a": "AC:G256:c0.8",
+        "policy_b": "FIX:MV:N1:V0",
+        "p_holm": 1.0
+      },
+      "8": {
+        "diff": 0.029687500000000002,
+        "ci_lo": 0.006250000000000002,
+        "ci_hi": 0.056249999999999994,
+        "p_boot": 0.0112,
+        "cost_diff": 1876.4218750000002,
+        "policy_a": "AC:G256:c0.85",
+        "policy_b": "FIX:MV:N4:V0",
+        "p_holm": 0.0896
+      },
+      "16": {
+        "diff": -0.004687499999999997,
+        "ci_lo": -0.023437500000000007,
+        "ci_hi": 0.014062500000000002,
+        "p_boot": 0.6668,
+        "cost_diff": -4558.668750000001,
+        "policy_a": "STOP:CORR:GV64x2:tau0.26",
+        "policy_b": "FIX:BAYES-CORR:N4:V2",
+        "p_holm": 1.0
+      },
+      "32": {
+        "diff": 0.004687500000000001,
+        "ci_lo": -0.03125,
+        "ci_hi": 0.040625,
+        "p_boot": 0.81,
+        "cost_diff": -17239.921875,
+        "policy_a": "STOP:CORR:GV64x4:tau0.26",
+        "policy_b": "FIX:BAYES-CORR:N8:V2",
+        "p_holm": 1.0
+      },
+      "64": {
+        "diff": 0.0078125,
+        "ci_lo": -0.021874999999999995,
+        "ci_hi": 0.0375,
+        "p_boot": 0.6002,
+        "cost_diff": -41442.2609375,
+        "policy_a": "STOP:CORR:GV64x4:tau0.26",
+        "policy_b": "FIX:BAYES-CORR:N8:V4",
+        "p_holm": 1.0
+      },
+      "128": {
+        "diff": -0.0578125,
+        "ci_lo": -0.178125,
+        "ci_hi": 0.06562499999999999,
+        "p_boot": 0.3366,
+        "cost_diff": -2395.1484375,
+        "policy_a": "STOP:CORR:GV64x4:tau0.28",
+        "policy_b": "FIX:MV:N64:V0",
+        "p_holm": 1.0
+      },
+      "256": {
+        "diff": -0.0578125,
+        "ci_lo": -0.178125,
+        "ci_hi": 0.06562499999999999,
+        "p_boot": 0.3366,
+        "cost_diff": -2395.1484375,
+        "policy_a": "STOP:CORR:GV64x4:tau0.28",
+        "policy_b": "FIX:MV:N64:V0",
+        "p_holm": 1.0
+      }
+    },
+    "E3_CORR_minus_IND": {
+      "16": {
+        "diff": -0.0296875,
+        "ci_lo": -0.09843749999999998,
+        "ci_hi": 0.03749999999999999,
+        "p_boot": 0.3878,
+        "cost_diff": 2168.6062500000003,
+        "policy_a": "STOP:CORR:GV64x2:tau0.26",
+        "policy_b": "STOP:IND:G256:tau0.26",
+        "p_holm": 1.0
+      },
+      "32": {
+        "diff": -0.02968749999999999,
+        "ci_lo": -0.09999999999999999,
+        "ci_hi": 0.042187499999999996,
+        "p_boot": 0.4112,
+        "cost_diff": 5879.8609375,
+        "policy_a": "STOP:CORR:GV64x4:tau0.26",
+        "policy_b": "STOP:IND:G256:tau0.26",
+        "p_holm": 1.0
+      },
+      "64": {
+        "diff": -0.02968749999999999,
+        "ci_lo": -0.09999999999999999,
+        "ci_hi": 0.042187499999999996,
+        "p_boot": 0.4112,
+        "cost_diff": 5879.8609375,
+        "policy_a": "STOP:CORR:GV64x4:tau0.26",
+        "policy_b": "STOP:IND:G256:tau0.26",
+        "p_holm": 1.0
+      },
+      "128": {
+        "diff": -0.054687499999999986,
+        "ci_lo": -0.15468749999999998,
+        "ci_hi": 0.04222656249999944,
+        "p_boot": 0.2716,
+        "cost_diff": 56247.628125,
+        "policy_a": "STOP:CORR:GV64x4:tau0.28",
+        "policy_b": "STOP:IND:G256:tau0.26",
+        "p_holm": 1.0
+      },
+      "256": {
+        "diff": -0.054687499999999986,
+        "ci_lo": -0.15468749999999998,
+        "ci_hi": 0.04222656249999944,
+        "p_boot": 0.2716,
+        "cost_diff": 56247.628125,
+        "policy_a": "STOP:CORR:GV64x4:tau0.28",
+        "policy_b": "STOP:IND:G256:tau0.26",
+        "p_holm": 1.0
+      }
+    }
+  },
+  "calibration_test_states": {
+    "IND": {
+      "logloss": 1.3270878963385182,
+      "ece": 0.1484531051709064,
+      "mean_conf": 0.29619488333484073,
+      "acc": 0.4446479885057471
+    },
+    "CORR": {
+      "logloss": 1.3200842440445835,
+      "ece": 0.1909218942401621,
+      "mean_conf": 0.3249904620816769,
+      "acc": 0.5159123563218391
+    }
+  },
+  "git_commit": "66abf245fb52bd55662254f9074a704e65c6b25c"
+}

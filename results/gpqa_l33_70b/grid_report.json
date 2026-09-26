@@ -1,0 +1,47 @@
+{
+  "dev": {
+    "n_problems": 32,
+    "share_cells_where_doubling_V_beats_doubling_N": 0.7333333333333333,
+    "median_d_err_per_1e4tok_double_V": -0.0004559833635381736,
+    "median_d_err_per_1e4tok_double_N": 0.0006187850841360451,
+    "mv": {
+      "1": 0.571875,
+      "4": 0.5453125,
+      "16": 0.521875,
+      "64": 0.5,
+      "128": 0.5421875,
+      "256": 0.5625
+    },
+    "best_fixed_any_cost": {
+      "policy": "FIX:BoN:N16:V32",
+      "err": 0.4953125,
+      "cost_x_cgen": 757.4554771425977
+    }
+  },
+  "test": {
+    "n_problems": 32,
+    "share_cells_where_doubling_V_beats_doubling_N": 0.6444444444444445,
+    "median_d_err_per_1e4tok_double_V": -0.00048437775969182526,
+    "median_d_err_per_1e4tok_double_N": 0.00029681580310260826,
+    "mv": {
+      "1": 0.4671875,
+      "4": 0.475,
+      "16": 0.4859375,
+      "64": 0.5,
+      "128": 0.4828125,
+      "256": 0.5
+    },
+    "best_fixed_any_cost": {
+      "policy": "FIX:BAYES-CORR:N64:V32",
+      "err": 0.375,
+      "cost_x_cgen": 2850.483129352399
+    }
+  },
+  "full_table_collection_cost": {
+    "generation_tokens": 17790366,
+    "verification_tokens": 204331188,
+    "total_tokens": 222121554,
+    "approx_flops": 3.109701756e+19,
+    "note": "Llama-3.3-70B for both roles; FLOPs ~ 2*params*tokens; no prefix caching"
+  }
+}
