@@ -1,0 +1,14 @@
+{
+  "phase": "dev",
+  "wall_s": 61.19218969345093,
+  "cpu_s": 61.177341004999995,
+  "python": "3.11.15",
+  "machine": "x86_64",
+  "n_cpu": 4,
+  "git_commit": "7bbebce26c8829701b90ae289e4ed651183d4d30",
+  "argv": [
+    "scripts/run_experiment.py",
+    "--phase",
+    "dev"
+  ]
+}

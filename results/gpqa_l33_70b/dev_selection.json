@@ -1,0 +1,265 @@
+{
+  "params": {
+    "IND": {
+      "kind": "IND",
+      "aq": 0.3132692884003589,
+      "bq": 0.4487604907800076,
+      "t": 0.8293241695303551,
+      "f": 0.6295272102451204,
+      "a1": 1.0,
+      "b1": 1.0,
+      "a0": 1.0,
+      "b0": 1.0,
+      "w_vote": 0.018857179278468545,
+      "w_ver": 4.43717514924234e-23
+    },
+    "CORR": {
+      "kind": "CORR",
+      "aq": 0.3132692884003589,
+      "bq": 0.4487604907800076,
+      "t": 0.5,
+      "f": 0.5,
+      "a1": 0.28772888171886524,
+      "b1": 0.06496318517700231,
+      "a0": 0.25594647411355287,
+      "b0": 0.15833053128523136,
+      "w_vote": 0.012719337409395298,
+      "w_ver": 0.08616016787252359
+    }
+  },
+  "c_gen_tokens": 1109.1583251953125,
+  "budgets_tokens": {
+    "2": 2218.316650390625,
+    "4": 4436.63330078125,
+    "8": 8873.2666015625,
+    "16": 17746.533203125,
+    "32": 35493.06640625,
+    "64": 70986.1328125,
+    "128": 141972.265625,
+    "256": 283944.53125
+  },
+  "selection": {
+    "GEN@2": {
+      "policy": "FIX:MV:N1:V0",
+      "dev_err": 0.571875,
+      "dev_cost": 1113.215625
+    },
+    "GEN@4": {
+      "policy": "AC:G256:c0.8",
+      "dev_err": 0.53125,
+      "dev_cost": 3831.1453125
+    },
+    "GEN@8": {
+      "policy": "AC:G256:c0.85",
+      "dev_err": 0.528125,
+      "dev_cost": 5358.734375
+    },
+    "GEN@16": {
+      "policy": "AC:G256:c0.85",
+      "dev_err": 0.528125,
+      "dev_cost": 5358.734375
+    },
+    "GEN@32": {
+      "policy": "FIX:MV:N16:V0",
+      "dev_err": 0.521875,
+      "dev_cost": 17838.146875
+    },
+    "GEN@64": {
+      "policy": "FIX:MV:N16:V0",
+      "dev_err": 0.521875,
+      "dev_cost": 17838.146875
+    },
+    "GEN@128": {
+      "policy": "FIX:MV:N64:V0",
+      "dev_err": 0.5,
+      "dev_cost": 71430.03125
+    },
+    "GEN@256": {
+      "policy": "FIX:MV:N64:V0",
+      "dev_err": 0.5,
+      "dev_cost": 71430.03125
+    },
+    "VER@2": null,
+    "VER@4": {
+      "policy": "FIX:BAYES-CORR:N1:V1",
+      "dev_err": 0.571875,
+      "dev_cost": 2730.3984375
+    },
+    "VER@8": {
+      "policy": "FIX:BAYES-CORR:N2:V2",
+      "dev_err": 0.559375,
+      "dev_cost": 8650.51875
+    },
+    "VER@16": {
+      "policy": "STOP:CORR:GV64x2:tau0.26",
+      "dev_err": 0.525,
+      "dev_cost": 13794.946875
+    },
+    "VER@32": {
+      "policy": "FIX:BAYES-CORR:N8:V2",
+      "dev_err": 0.5078125,
+      "dev_cost": 34658.7953125
+    },
+    "VER@64": {
+      "policy": "FIX:BAYES-CORR:N8:V4",
+      "dev_err": 0.503125,
+      "dev_cost": 60348.8296875
+    },
+    "VER@128": {
+      "policy": "FIX:BAYES-CORR:N8:V4",
+      "dev_err": 0.503125,
+      "dev_cost": 60348.8296875
+    },
+    "VER@256": {
+      "policy": "FIX:BAYES-CORR:N8:V4",
+      "dev_err": 0.503125,
+      "dev_cost": 60348.8296875
+    },
+    "FIXED@2": {
+      "policy": "FIX:MV:N1:V0",
+      "dev_err": 0.571875,
+      "dev_cost": 1113.215625
+    },
+    "FIXED@4": {
+      "policy": "FIX:MV:N1:V0",
+      "dev_err": 0.571875,
+      "dev_cost": 1113.215625
+    },
+    "FIXED@8": {
+      "policy": "FIX:MV:N4:V0",
+      "dev_err": 0.5453125,
+      "dev_cost": 4469.4078125
+    },
+    "FIXED@16": {
+      "policy": "FIX:BAYES-CORR:N4:V2",
+      "dev_err": 0.5265625,
+      "dev_cost": 17365.0546875
+    },
+    "FIXED@32": {
+      "policy": "FIX:BAYES-CORR:N8:V2",
+      "dev_err": 0.5078125,
+      "dev_cost": 34658.7953125
+    },
+    "FIXED@64": {
+      "policy": "FIX:BAYES-CORR:N8:V4",
+      "dev_err": 0.503125,
+      "dev_cost": 60348.8296875
+    },
+    "FIXED@128": {
+      "policy": "FIX:MV:N64:V0",
+      "dev_err": 0.5,
+      "dev_cost": 71430.03125
+    },
+    "FIXED@256": {
+      "policy": "FIX:MV:N64:V0",
+      "dev_err": 0.5,
+      "dev_cost": 71430.03125
+    },
+    "STOP@2": {
+      "policy": "AC:G256:c0.26",
+      "dev_err": 0.571875,
+      "dev_cost": 1115.4453125
+    },
+    "STOP@4": {
+      "policy": "AC:G256:c0.8",
+      "dev_err": 0.53125,
+      "dev_cost": 3831.1453125
+    },
+    "STOP@8": {
+      "policy": "AC:G256:c0.85",
+      "dev_err": 0.528125,
+      "dev_cost": 5358.734375
+    },
+    "STOP@16": {
+      "policy": "STOP:CORR:GV64x2:tau0.26",
+      "dev_err": 0.525,
+      "dev_cost": 13794.946875
+    },
+    "STOP@32": {
+      "policy": "STOP:CORR:GV64x4:tau0.26",
+      "dev_err": 0.5171875,
+      "dev_cost": 18219.6875
+    },
+    "STOP@64": {
+      "policy": "STOP:CORR:GV64x4:tau0.26",
+      "dev_err": 0.5171875,
+      "dev_cost": 18219.6875
+    },
+    "STOP@128": {
+      "policy": "STOP:CORR:GV64x4:tau0.28",
+      "dev_err": 0.509375,
+      "dev_cost": 78727.0640625
+    },
+    "STOP@256": {
+      "policy": "STOP:CORR:GV64x4:tau0.28",
+      "dev_err": 0.509375,
+      "dev_cost": 78727.0640625
+    },
+    "STOP-IND@2": null,
+    "STOP-IND@4": null,
+    "STOP-IND@8": {
+      "policy": "STOP:IND:G256:tau0.26",
+      "dev_err": 0.5296875,
+      "dev_cost": 8633.7171875
+    },
+    "STOP-IND@16": {
+      "policy": "STOP:IND:G256:tau0.26",
+      "dev_err": 0.5296875,
+      "dev_cost": 8633.7171875
+    },
+    "STOP-IND@32": {
+      "policy": "STOP:IND:G256:tau0.26",
+      "dev_err": 0.5296875,
+      "dev_cost": 8633.7171875
+    },
+    "STOP-IND@64": {
+      "policy": "STOP:IND:G256:tau0.26",
+      "dev_err": 0.5296875,
+      "dev_cost": 8633.7171875
+    },
+    "STOP-IND@128": {
+      "policy": "STOP:IND:G256:tau0.26",
+      "dev_err": 0.5296875,
+      "dev_cost": 8633.7171875
+    },
+    "STOP-IND@256": {
+      "policy": "STOP:IND:G256:tau0.26",
+      "dev_err": 0.5296875,
+      "dev_cost": 8633.7171875
+    },
+    "STOP-CORR@2": null,
+    "STOP-CORR@4": null,
+    "STOP-CORR@8": null,
+    "STOP-CORR@16": {
+      "policy": "STOP:CORR:GV64x2:tau0.26",
+      "dev_err": 0.525,
+      "dev_cost": 13794.946875
+    },
+    "STOP-CORR@32": {
+      "policy": "STOP:CORR:GV64x4:tau0.26",
+      "dev_err": 0.5171875,
+      "dev_cost": 18219.6875
+    },
+    "STOP-CORR@64": {
+      "policy": "STOP:CORR:GV64x4:tau0.26",
+      "dev_err": 0.5171875,
+      "dev_cost": 18219.6875
+    },
+    "STOP-CORR@128": {
+      "policy": "STOP:CORR:GV64x4:tau0.28",
+      "dev_err": 0.509375,
+      "dev_cost": 78727.0640625
+    },
+    "STOP-CORR@256": {
+      "policy": "STOP:CORR:GV64x4:tau0.28",
+      "dev_err": 0.509375,
+      "dev_cost": 78727.0640625
+    }
+  },
+  "fit_cpu_s": 6.508439631,
+  "n_dev_states": {
+    "IND": 27840,
+    "CORR": 27840
+  },
+  "git_commit": "7bbebce26c8829701b90ae289e4ed651183d4d30"
+}
